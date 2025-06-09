@@ -2,22 +2,27 @@ name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
+# Aseguramos que el token tiene permiso de escritura sobre Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # 1) Leemos el repo y dejamos el token en .git/config
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: true
+          persist-credentials: true   # <- clave para que el token se mantenga
+          fetch-depth: 0              # opcional, full history (no estrictamente necesario)
 
+      # 2) Preparamos Python y dependencias
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -27,11 +32,15 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material mkdocs-macros-plugin
 
+      # 3) Construimos el sitio
       - name: Build site
         run: mkdocs build --clean
 
+      # 4) Desplegamos con peaceiris
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          # opcionalmente forzamos la URL remota con credenciales
+          remote_url: https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
