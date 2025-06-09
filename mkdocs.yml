@@ -1,0 +1,81 @@
+site_name: Pepeland Wiki
+
+theme:
+  name: material
+  language: es
+  logo: other/images/logo3.png        # opcional
+  favicon: other/images/logo3.png  # opcional
+
+
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: lime
+
+  font:
+    text: Roboto
+    code: Fira Code
+
+  features:
+    - navigation.tabs               # pestañas arriba
+    - navigation.indexes            # permite index.md en carpetas
+    - navigation.top                # botón de volver arriba
+    - content.code.copy             # botón copiar código
+    - toc.integrate                 # índice dentro del sidebar
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Inicio: index.md
+  - Facciones:
+      - Introducción: Facciones/Main_Facciones.md
+      - Magia: Facciones/Magia/Facciones_1.md
+      - Coalición: Facciones/Tecnologicas/Facciones_2.md
+  - Lore:
+      - Introducción: Lore/Eras.md
+      - Resumen: Lore/Resumen.md
+      - 1. Era Dormida:
+          - Era Dormida: Lore/1. Era Dormida/ERA DORMIDA.md
+      - 2. Era Arcana:
+          - 1. El Despertar y la Expansión: Lore/2. Era Arcana/1._El_Despertar_y_la_Expansion.md
+          - 2. La Primera Ruptura: Lore/2. Era Arcana/2. La Primera Ruptura.md
+          - 3. La Segunda Ruptura: Lore/2. Era Arcana/3. La Segunda Ruptura.md
+          - 4. La Guerra de los Fragmentos: Lore/2. Era Arcana/4. La Guerra de los Fragmentos.md
+      - 3. Era Industrial:
+          - Era Industrial: Lore/3. Era Industrial/ERA INDUSTRIAL.md
+    
+      - Pepeland 1: Lore/Pepeland_1.md
+      - Pepeland 2: Lore/Pepeland_2.md
+  - Eventos:
+      - Vista General: Lore/Eventos/Eventos_Eras.md
+      - Batallas: Lore/Eventos/Eventos_Batallas.md
+  - Personajes Históricos:
+      - Introducción: Personajes Historicos/Main Personajes.md
+
+
+markdown_extensions:
+  - admonition          # Para bloques como "note", "warning", etc.
+  - attr_list           # Para usar atributos en HTML/Markdown
+  - def_list            # Listas con formato limpio
+  - footnotes           # Notas al pie
+  - md_in_html          # Markdown dentro de HTML (para <div> y <p>)
+  - toc:
+      permalink: true   # Agrega enlaces a cada sección del índice
+
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed 
+plugins:
+  - search
+  - macros 
+  #- material-extensions 
+
+extra_css:
+  - other/overrides/extra.css
