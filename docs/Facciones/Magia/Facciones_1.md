@@ -22,7 +22,7 @@
     <div class="descripcion">
       Caza y exterminio de criaturas mágicas fuera de control.
     </div>
-    <a href="../Brujosdedrakenhart" class="subfaccion-btn">Brujos de Drakenhart</a>
+    <a href="../BrujosDeDrakenhart" class="subfaccion-btn">Brujos de Drakenhart</a>
   </div>
 
   <div class="subfaccion-card">
@@ -30,7 +30,7 @@
     <div class="descripcion">
       Transformación vital y prolongación de la vida mediante rituales de sangre.
     </div>
-    <a href="../Brujasdelarosanegra" class="subfaccion-btn">Brujas de la Rosa Negra</a>
+    <a href="../BrujasDeLaRosaNegra" class="subfaccion-btn">Brujas de la Rosa Negra</a>
   </div>
 
   <div class="subfaccion-card">
@@ -38,7 +38,7 @@
     <div class="descripcion">
       Alquimia viviente: creación de plagas selectivas y protecciones biológicas.
     </div>
-    <a href="../Clanesdesangreverde" class="subfaccion-btn">Clanes de Sangre Verde</a>
+    <a href="../ClanesDeSangreVerde" class="subfaccion-btn">Clanes de Sangre Verde</a>
   </div>
 
   <div class="subfaccion-card">
@@ -46,7 +46,7 @@
     <div class="descripcion">
       Explorar energías infernales y forjar portales de fuego eterno.
     </div>
-    <a href="../Arcanistasdelnether" class="subfaccion-btn">Arcanistas del Nether</a>
+    <a href="../ArcanistasDelNether" class="subfaccion-btn">Arcanistas del Nether</a>
   </div>
 
   <div class="subfaccion-card">
@@ -54,6 +54,6 @@
     <div class="descripcion">
       Guardar sellos y neutralizar filtraciones del Vacío.
     </div>
-    <a href="../Tejedoresdelvacio" class="subfaccion-btn">Tejedores del Vacío</a>
+    <a href="../TejedoresDelVacio" class="subfaccion-btn">Tejedores del Vacío</a>
   </div>
 </div>

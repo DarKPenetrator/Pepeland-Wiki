@@ -8,7 +8,7 @@
     <div class="descripcion">
       Nace junto a Alas Ícaro como columna de asalto blindado. Sus tanques rompemuros abrieron líneas fortificadas decisivas.
     </div>
-    <a href="../Divisionacorazadagoliat" class="subfaccion-btn">División Acorazada Goliat</a>
+    <a href="../DivisionAcorazadaGoliat" class="subfaccion-btn">División Acorazada Goliat</a>
   </div>
 
   <div class="subfaccion-card">
@@ -16,7 +16,7 @@
     <div class="descripcion">
       Veteranos curtidos en la guerra, inspirados en ideologías puristas y tácticas despiadadas.
     </div>
-    <a href="../Legiondelascrucesrojas" class="subfaccion-btn">Legión de las Cruces Rojas</a>
+    <a href="../LegionDeLasCrucesRojas" class="subfaccion-btn">Legión de las Cruces Rojas</a>
   </div>
 
   <div class="subfaccion-card">
@@ -32,7 +32,7 @@
     <div class="descripcion">
       Coordina la producción de armas de asedio, fortificaciones y artillería disruptora desde 1371 d.E.
     </div>
-    <a href="../Escuelasuperiordeingenieriavanguardium" class="subfaccion-btn">Escuela Superior de Ingeniería Vanguardium</a>
+    <a href="../EscuelaSuperiorDeIngenieriaVanguardium" class="subfaccion-btn">Escuela Superior de Ingeniería Vanguardium</a>
   </div>
 
  
@@ -41,14 +41,14 @@
     <div class="descripcion">
       Escuadrones de “vuelo limpio” y bombardeos quirúrgicos fundados por desertores de Alas Ícaro.
     </div>
-    <a href="../Academiadeaviacionaquila" class="subfaccion-btn">Academia de Aviación Aquila</a>
+    <a href="../AcademiadeAviacionAquila" class="subfaccion-btn">Academia de Aviación Aquila</a>
   </div>
    <div class="subfaccion-card">
     <img src="../../../other/images/coalicion/Armadanavalcolossus.png" alt="Armada Naval Colossus">
     <div class="descripcion">
       Armada diseñadas para bloquear costas mágicas y apoyar desembarcos anfibios con cañones de asedio.
     </div>
-    <a href="../Armadanavalcolossus" class="subfaccion-btn">Armada Naval Colossus</a>
+    <a href="../ArmadaNavalColossus" class="subfaccion-btn">Armada Naval Colossus</a>
   </div>
 
 
@@ -57,6 +57,6 @@
     <div class="descripcion">
       Reconstruye ciudades y regula la producción masiva de armamento y maquinaria pesada desde 1394 d.E.
     </div>
-    <a href="../Sindicatoindustrialkronnos" class="subfaccion-btn">Sindicato Industrial Kronnos</a>
+    <a href="../SindicatoIndustrialKronnos" class="subfaccion-btn">Sindicato Industrial Kronnos</a>
   </div>
 </div>
