@@ -5,15 +5,17 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: read       # leer el código
-  pages: write         # desplegar a GitHub Pages
-  id-token: write      # necesario para algunos flujos de Pages
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: true   # <-- Asegura que el token siga disponible
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
