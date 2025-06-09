@@ -7,7 +7,7 @@ title: Alas Ícaro
 
   <!-- 1. Imagen centrada -->
   <div class="faccion-image">
-    <img src="../../../other/images/coalicion/AlasIcaro.png" alt="Alas Ícaro">
+    <img src="../../../other/images/coalicion/Alasicaro.png" alt="Alas Ícaro">
   </div>
 
   <!-- 2. Metadatos en 2 columnas -->

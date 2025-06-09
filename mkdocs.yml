@@ -8,6 +8,7 @@ theme:
 
 
 
+
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -79,3 +80,6 @@ plugins:
 
 extra_css:
   - other/overrides/extra.css
+  
+extra_javascript:
+  - js/login.js

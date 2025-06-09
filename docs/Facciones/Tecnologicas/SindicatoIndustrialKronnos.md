@@ -7,7 +7,7 @@ title: Sindicato Industrial Kronnos
 
   <!-- 1. Imagen centrada -->
   <div class="faccion-image">
-    <img src="../../../other/images/coalicion/SindicatoIndustrialKronnos.png" alt="Sindicato Industrial Kronnos">
+    <img src="../../../other/images/coalicion/Sindicatoindustrialkronnos.png" alt="Sindicato Industrial Kronnos">
   </div>
 
   <!-- 2. Metadatos en 2 columnas -->

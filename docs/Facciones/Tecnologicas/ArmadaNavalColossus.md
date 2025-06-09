@@ -7,7 +7,7 @@ title: Armada Naval Colossus
 
   <!-- 1. Imagen centrada -->
   <div class="faccion-image">
-    <img src="../../../other/images/coalicion/ArmadaNavalColossus.png" alt="Armada Naval Colossus">
+    <img src="../../../other/images/coalicion/Armadanavalcolossus.png" alt="Armada Naval Colossus">
   </div>
 
   <!-- 2. Metadatos en 2 columnas -->

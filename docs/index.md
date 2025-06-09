@@ -6,6 +6,31 @@
   <img src="other/images/portada.png" alt="Pepeland Portada" width="1200">
 </p>
 
+
+---
+## 🗡️ Misiones
+<div class="missions-grid">
+  <div class="mission-card">
+    <h3>Main Misiones</h3>
+    <a href="missions/MainMisiones" class="md-button md-button--primary">
+      Ver misiones →
+    </a>
+  </div>
+  <p class="missions-intro">
+  Accede a tus misiones disponibles y sigue la aventura.  
+  Haz clic en la tarjeta correspondiente para ver los detalles.
+</p>
+
+  <!-- Ejemplo si tuvieras más categorías:
+  <div class="mission-card">
+    <h3>Misiones Secundarias</h3>
+    <a href="missions/SideQuests" class="md-button">
+      Ver misiones →
+    </a>
+  </div>
+  -->
+</div>
+
 ---
 
 ## 🗺️ ¿Qué pasó en **Pepeland 1**?
@@ -17,6 +42,8 @@
     <br><br>
     <div style="display:flex; text-align:center;"><a href="Lore/Pepeland_1">+ Info</a></div>
 </div>
+
+
 
 ---
 

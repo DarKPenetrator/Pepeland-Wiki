@@ -377,6 +377,56 @@ a:hover { color: #64b5f6; }
   font-style: italic;
   color: #bbb;
 }
+/* =====================
+   Misiones Section
+   ===================== */
+
+/* Texto introductorio */
+.missions-intro {
+  font-size: 1.1rem;
+  color: var(--md-default-fg-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Grid de tarjetas de misiones */
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Cada tarjeta de misión */
+.mission-card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, background 0.2s;
+}
+.mission-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  color: #ba68c8;
+}
+.mission-card a.md-button {
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* Hover effects */
+.mission-card:hover {
+  transform: translateY(-4px);
+  background: #2a2a2a;
+}
+
+
+
 
 
 
@@ -545,3 +595,123 @@ a:hover { color: #64b5f6; }
   text-align: justify;
   line-height: 1.6;
 }
+
+
+
+
+
+
+/* Ocultar el modal cuando tenga el atributo hidden */
+/* --------------------------------------------- */
+/* MODAL: overlay y contenedor */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* MODAL: overlay y contenedor */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* MODAL: overlay y contenedor */
+/* --------------------------------------------- */
+
+.custom-modal[hidden] {
+  display: none !important;
+}
+
+.custom-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+/* --------------------------------------------- */
+/* CONTENEDOR DEL MODAL: ancho y overflow */
+/* --------------------------------------------- */
+.custom-modal__container {
+  background-color: #1b1d1e; /* fondo oscuro */
+
+  padding: 1.5rem;                    /* un poco más de espacio interior */
+  border-radius: 0.5rem;
+  box-shadow: var(--md-elevation-shadow-8);
+
+  /* ahora puede crecer hasta 480px, o el 90% del viewport si es más pequeño */
+  width: min(480px, 90vw);
+
+  /* altura máxima y scroll vertical si hace falta */
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* --------------------------------------------- */
+/* TÍTULO */
+/* --------------------------------------------- */
+.custom-modal__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+/* --------------------------------------------- */
+/* INPUT */
+/* --------------------------------------------- */
+.custom-modal__input {
+  width: 100%;
+  padding: 0.75rem;
+  font-family: Minecraft;
+  font-size: 1rem;
+  border: 1px solid var(--md-default-border-color);
+  border-radius: 0.25rem;
+  margin: 0 auto 1rem;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------- */
+/* BOTONES DEL MODAL */
+/* --------------------------------------------- */
+.custom-modal__actions {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;     /* ahora sí están obligados a caber en el 100% */
+  box-sizing: border-box;
+}
+
+.custom-modal__actions .md-button {
+  flex: 1;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+
+
+/* ====================================================== */
+/* BOTONES DE LA PÁGINA ÍNDICE */
+
+/* Contenedor flexible, centrado y con salto de línea si hace falta */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align-last: center;
+  margin: 1.5rem 0;
+}
+
+/* Cada botón tiene un ancho mínimo y no se parte el texto */
+.button-container .md-button {
+  min-width: 180px;
+  white-space: nowrap;
+}
+
+/* Responsive: en móviles, ocupan casi todo el ancho */
+@media (max-width: 400px) {
+  .button-container .md-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+

@@ -7,7 +7,7 @@ title: Legión de las Cruces Rojas
 
   <!-- 1. Imagen centrada -->
   <div class="faccion-image">
-    <img src="../../../other/images/coalicion/LegiondelasCrucesRojas.png" alt="Legión de las Cruces Rojas">
+    <img src="../../../other/images/coalicion/Legiondelascrucesrojas.png" alt="Legión de las Cruces Rojas">
   </div>
 
   <!-- 2. Metadatos en 2 columnas -->

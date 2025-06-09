@@ -7,7 +7,7 @@ title: Academia de Aviación Aquila
 
   <!-- 1. Imagen centrada -->
   <div class="faccion-image">
-    <img src="../../../other/images/coalicion/AcademiadeAviacionAquila.png" alt="Academia de Aviación Aquila">
+    <img src="../../../other/images/coalicion/Academiadeaviacionaquila.png" alt="Academia de Aviación Aquila">
   </div>
 
   <!-- 2. Metadatos en 2 columnas -->

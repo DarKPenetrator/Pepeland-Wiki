@@ -7,7 +7,7 @@ title: Escuela Superior de Ingeniería Vanguardium
 
   <!-- 1. Imagen centrada -->
   <div class="faccion-image">
-    <img src="../../../other/images/coalicion/EscuelaSuperiorDeIngenieriaVanguardium.png" alt="Escuela Superior de Ingeniería Vanguardium">
+    <img src="../../../other/images/coalicion/Escuelasuperiordeingenieriavanguardium.png" alt="Escuela Superior de Ingeniería Vanguardium">
   </div>
 
   <!-- 2. Metadatos en 2 columnas -->
