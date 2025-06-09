@@ -10,7 +10,7 @@
 ---
 ## 🗡️ Misiones
 <div class="missions-grid">
-  <div class="mission-card">
+  <div class="mission-card-main">
     <h3>Main Misiones</h3>
     <a href="missions/MainMisiones" class="md-button md-button--primary">
       Ver misiones →

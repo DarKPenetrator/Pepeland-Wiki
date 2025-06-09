@@ -398,20 +398,22 @@ a:hover { color: #64b5f6; }
 }
 
 /* Cada tarjeta de misión */
-.mission-card {
+.mission-card-main {
   background: #1e1e1e;
   border-radius: 8px;
   padding: 1.25rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+  border: 2px solid #b722fc;
   transition: transform 0.2s, background 0.2s;
 }
-.mission-card h3 {
+.mission-card-main h3 {
   margin: 0 0 0.75rem;
   font-size: 1.25rem;
   color: #ba68c8;
 }
-.mission-card a.md-button {
+.mission-card-main a.md-button {
   display: inline-block;
   width: auto;
   padding: 0.5rem 1rem;
@@ -420,6 +422,10 @@ a:hover { color: #64b5f6; }
 }
 
 /* Hover effects */
+.mission-card-main:hover {
+  transform: translateY(-4px);
+  background: #2a2a2a;
+}
 .mission-card:hover {
   transform: translateY(-4px);
   background: #2a2a2a;
@@ -715,3 +721,322 @@ a:hover { color: #64b5f6; }
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* extra.css */
+
+/* Contenedor general */
+.faction-missions {
+  font-family: "Minecraft", sans-serif;
+  max-width: 1200px;
+  margin: 2em auto;
+}
+.faction-missions h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+  color: #eee;
+  border-bottom: 3px solid #fca922;
+  padding-bottom: 0.3em;
+}
+.faction-missions.magia h2 {
+  border-bottom: 3px solid #a522fc;
+}
+
+/* Cada sección de misiones */
+.mission-section {
+  position: relative;
+  border: 2px solid #444;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  background: #222;
+  overflow: hidden;
+  font-size: 1.1em;
+  padding: 1.2em; /* espacio interior para no tapar contenido con esquinas */
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  color: #ddd;
+}
+
+/* Esquinas absolutas */
+/* Esquinas grandes por defecto */
+.corner {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+}
+
+/* Tablets / móviles grandes */
+@media screen and (max-width: 768px) {
+  .corner {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 480px) {
+  .corner {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.top-left    { top: 0;    left: 0;    transform: translate(-1px, -1px); }
+.top-right   { top: 0;    right: 0;   transform: translate(1px, -1px)  scaleX(-1); }
+.bottom-left { bottom: 0; left: 0;    transform: translate(-1px, 1px)  scaleY(-1); }
+.bottom-right{ bottom: 0; right: 0;   transform: translate(1px, 1px)   scale(-1, -1); }
+
+/* Ocultar el checkbox real */
+.mission-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Label clicable */
+.mission-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.8em 1em;
+  background: #333;
+  border-radius: 6px;
+  user-select: none;
+  margin-bottom: 0.5em;
+}
+
+.section-icon {
+  width: 62px;
+  height: 62px;
+  margin-right: 0.6em;
+}
+.section-title {
+  flex-grow: 1;
+  font-weight: bold;
+  color: #fff;
+}
+.toggle-icon {
+  width: 44px;
+  height: 44px;
+  transition: transform 0.3s ease;
+}
+
+
+/* Rotar la flecha al abrir */
+.mission-toggle:checked + .mission-label .toggle-icon {
+  transform: rotate(90deg);
+}
+
+/* Contenido colapsable */
+.mission-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding: 0 0.8em;
+}
+
+/* Expandir cuando está activo */
+.mission-toggle:checked + .mission-label + .mission-list {
+  max-height: 100vh;
+  padding-bottom: 1em;
+}
+
+/* Ítems */
+.mission-item + .mission-item {
+  margin-top: 0.8em;
+}
+.mission-item h3 {
+  margin: 0.6em 0 0.3em;
+  font-size: 1.15em;
+  color: #f5f5f5;
+}
+.mission-item p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* extra.css */
+
+/* Card de misión */
+.mission-card {
+  background: #2a2a2a;
+  border: 2px solid #fca922;
+  border-radius: 8px;
+  padding: 0.75em 1em 1.2em;
+  margin: 0.8em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  color: #eee;
+}
+.mission-card.magia {
+  border: 2px solid #a522fc;
+}
+
+/* Cabecera con banners */
+.mission-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 0.8em;
+  margin-bottom: 0.6em;
+  background: #333;
+  border-radius: 6px;
+}
+
+
+.mission-header::before,
+.mission-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 12px;                                 /* ajusta a la altura real de tu línea */
+  background-image: url("../../other/images/missions/linea3.png");
+  background-repeat: round;                    /* tiles completos, sin recortes */
+  background-size: contain;                   /* ancho automático, altura fija */
+  background-position: center;                 /* centrar si sobra espacio */
+  pointer-events: none;
+  z-index: 0;
+}
+.mission-header.magia::before,
+.mission-header.magia::after {
+  background-image: url("../../other/images/missions/mlinea3.png");
+}
+
+
+
+
+.mission-header::before {
+  top: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.mission-header::after {
+  bottom: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* En móvil, sólo un tile centrado */
+@media (max-width: 480px) {
+  .mission-header::before,
+  .mission-header::after {
+    background-repeat: round;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+
+
+/* Icono al inicio */
+.mission-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  margin-top: 5px; /* para centrar verticalmente */
+  margin-bottom: 5px; /* para centrar verticalmente */
+}
+
+/* Título centrado */
+.mission-title {
+  margin-top: 5px; /* para centrar verticalmente */
+  margin-bottom: 5px; 
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  z-index: 1; /* por encima de los banners */
+  color: #fff;
+}
+.mission-title.completed {
+  color: #6e6868;            /* el color que prefieras */
+  text-decoration: line-through;
+  flex-grow: 1;
+  text-align: start;
+  margin-left: 20px; /* espacio para el icono */
+  font-size: 1.2em;
+}
+
+/* Flecha al final */
+.mission-arrow {
+  margin-top: 5px; /* para centrar verticalmente */
+  margin-bottom: 5px; 
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Descripción */
+.mission-desc {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+  padding: 0 0.4em;
+  color: #ccc;
+}
+
+.more-details {
+  display:block;
+  align-items: center;
+  text-align:center;
+  width: 20%;
+  margin-top: 0.5em;
+  
+    padding: 0.5em;
+  border: 1px solid #fca922;
+  border-radius: 8px;
+  font-size: 0.9em;
+  color: #fca922; /* color del enlace */
+  text-decoration: none;
+}
+
+
+/* En móvil, sólo un tile centrado */
+@media (max-width: 820px) {
+  .more-details {
+    width: 100%;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    text-align: center;
+  }
+}

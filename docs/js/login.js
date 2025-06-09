@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const routes = {
     'ALPHA': '../CoalicionMisiones',
     'BETA':  '../MagiaMisiones',
+    'ING69':  '../CoalicionMisiones3398',
+    'ARC66':  '../MagiaMisiones1034',
     // añade más códigos si los tienes
   };
 
