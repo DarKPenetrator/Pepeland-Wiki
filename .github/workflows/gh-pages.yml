@@ -4,27 +4,27 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: read       # leer el código
+  pages: write         # desplegar a GitHub Pages
+  id-token: write      # necesario para algunos flujos de Pages
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        pip install mkdocs mkdocs-material mkdocs-macros-plugin
-
-    - name: Build site
-      run: mkdocs build --clean
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./site
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-macros-plugin
+      - name: Build site
+        run: mkdocs build --clean
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
