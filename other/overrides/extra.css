@@ -427,7 +427,6 @@ a:hover { color: #64b5f6; }
   background: #2a2a2a;
 }
 .mission-card:hover {
-  transform: translateY(-4px);
   background: #2a2a2a;
 }
 
@@ -771,12 +770,29 @@ a:hover { color: #64b5f6; }
   color: #ddd;
 }
 
+.mission-section1 {
+  position: relative;
+  border: 3px solid #fca922;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  background: #222;
+  overflow: hidden;
+  font-size: 1.1em;
+  padding: 1.2em; /* espacio interior para no tapar contenido con esquinas */
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  color: #ddd;
+}
+.mission-section1.magia {
+  border: 3px solid #1a52a8;
+
+}
+
 /* Esquinas absolutas */
 /* Esquinas grandes por defecto */
 .corner {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   pointer-events: none;
 }
 
@@ -909,8 +925,25 @@ a:hover { color: #64b5f6; }
   border: 2px solid #a522fc;
 }
 
+.mission-card1 {
+  border-radius: 8px;
+  padding: 0.75em 1em 1.2em;
+  margin: 0.8em 0;
+  color: #eee;
+}
+
 /* Cabecera con banners */
 .mission-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 0.8em;
+  margin-bottom: 0.6em;
+  background: #333;
+  border-radius: 6px;
+}
+.mission-header1 {
   position: relative;
   display: flex;
   align-items: center;
@@ -941,6 +974,24 @@ a:hover { color: #64b5f6; }
   background-image: url("../../other/images/missions/mlinea3.png");
 }
 
+.mission-header1::before,
+.mission-header1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20px;                                 /* ajusta a la altura real de tu línea */
+  background-image: url("../../other/images/missions/linea3.png");
+  background-repeat: round;                    /* tiles completos, sin recortes */
+  background-size: contain;                   /* ancho automático, altura fija */
+  background-position: center;                 /* centrar si sobra espacio */
+  pointer-events: none;
+  z-index: 0;
+}
+.mission-header1.magia::before,
+.mission-header1.magia::after {
+  background-image: url("../../other/images/missions/mlinea3.png");
+}
 
 
 
@@ -950,6 +1001,16 @@ a:hover { color: #64b5f6; }
   border-top-right-radius: 6px;
 }
 .mission-header::after {
+  bottom: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.mission-header1::before {
+  top: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.mission-header1::after {
   bottom: 0;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -983,6 +1044,16 @@ a:hover { color: #64b5f6; }
   flex-grow: 1;
   text-align: center;
   font-size: 1.2em;
+  font-weight: bold;
+  z-index: 1; /* por encima de los banners */
+  color: #fff;
+}
+.mission-title1 {
+  margin-top: 15px; /* para centrar verticalmente */
+  margin-bottom: 15px; 
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.5em;
   font-weight: bold;
   z-index: 1; /* por encima de los banners */
   color: #fff;
@@ -1021,16 +1092,19 @@ a:hover { color: #64b5f6; }
   text-align:center;
   width: 20%;
   margin-top: 0.5em;
-  
-    padding: 0.5em;
+  padding: 0.5em;
   border: 1px solid #fca922;
   border-radius: 8px;
   font-size: 0.9em;
   color: #fca922; /* color del enlace */
   text-decoration: none;
 }
-
-
+.more-details.magia{
+  border: 1px solid #a522fc;
+}
+.more-details.magia1{
+  border: 1px solid #1a52a8;
+}
 /* En móvil, sólo un tile centrado */
 @media (max-width: 820px) {
   .more-details {
@@ -1038,5 +1112,198 @@ a:hover { color: #64b5f6; }
     margin: 0.5em auto;
     padding: 0.5em;
     text-align: center;
+  }
+}
+
+
+
+
+
+/* -----------------------------
+   DETALLE DE MISIONES
+   ----------------------------- */
+/* Detalle de misiones dentro del p existente */
+/* -----------------------------
+   DETALLE DE MISIONES
+   ----------------------------- */
+/* Detalle de misiones dentro del p existente */
+/* -----------------------------
+   DETALLE DE MISIONES
+   ----------------------------- */
+.mission-detail1 {
+  margin-top: 1.5em;
+}
+.mission-objective1 {
+  background: #333;
+  border: 2px solid #fca922;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.mission-objective1.magia{
+  border: 2px solid #1a52a8;
+}
+.mission-full-desc1 {
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 1em;
+  color: #ccc;
+  line-height: 1.4;
+  margin-bottom: 1.25em;
+}
+.detail-btn1 {
+  display: inline-block;
+  flex: 1;
+  max-width: 180px;
+  padding: 0.75em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: #333;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.1s;
+}
+.detail-btn1:hover {
+  background: #444;
+  transform: translateY(-4px);
+  transition: transform 1s;
+}
+.detail-btn1:active {
+  transform: translateY(0);
+}
+.reward1 { }
+.ubi1    { }
+
+/* -----------------------------
+   BASE: toggle + contenido colapsable
+   ----------------------------- */
+.mission-actions1 {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+.action-item1 {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+.action-toggle1 {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Encabezado clicable (sólo móvil) */
+.detail-header1 {
+  position: relative;
+  display: none; 
+  width: 100%;              /* oculto por defecto */
+  background: #333;
+  border: 2px solid #fca922;
+  border-radius: 6px;
+  padding: 0.75em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+
+  /* Para centrar la flecha junto al texto */
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+width: 100%;
+}
+.detail-header1.magia{
+  border: 2px solid #1a52a8;
+}
+
+/* Pseudo-elemento: flecha */
+.detail-header1::after {
+  content: "";
+  display: inline-block;
+  justify-content: end;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../other/images/missions/arrowpoint.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 1em;
+  transition: transform 0.3s ease;
+}
+.detail-header1.magia::after {
+  background-image: url("../../other/images/missions/marrowpoint.png");
+}
+/* Rota la flecha al abrir */
+.action-toggle1:checked + .detail-header1::after {
+  transform: rotate(90deg);
+}
+
+/* Contenido colapsable */
+.action-content1 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #ccc;
+  text-align: left;
+  line-height: 1.4;
+  padding: 0 0.75em;
+}
+.action-toggle1:checked + .detail-header1 + .action-content1 {
+  max-height: 500px;
+  padding: 0.75em;
+}
+
+/* -----------------------------
+   MÓVIL (<768px)
+   ----------------------------- */
+@media (max-width: 767px) {
+  .mission-actions1 {
+    flex-direction: column;
+  }
+  .detail-header1 {
+    display: inline-flex;    /* sólo en móvil */
+  }
+}
+
+/* -----------------------------
+   ESCRITORIO (≥768px)
+   ----------------------------- */
+@media (min-width: 768px) {
+  /* Título siempre visible, sin funcionalidad toggle */
+  .detail-header1 {
+    display: block !important;
+    pointer-events: none;
+    cursor: default;
+  }
+  /* Oculta sólo la flecha */
+  .detail-header1::after {
+    display: none !important;
+  }
+  /* Desactiva el checkbox */
+  .action-toggle1 {
+    display: none !important;
+  }
+  /* Muestra siempre el contenido */
+  .action-content1 {
+    display: block !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0.75em !important;
+  }
+  /* Disposición en fila */
+  .mission-actions1 {
+    flex-direction: row;
+    gap: 1em;
+  }
+  .action-item1 {
+    flex: 1;
   }
 }
