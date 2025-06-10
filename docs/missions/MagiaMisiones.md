@@ -28,6 +28,8 @@
   </div>
   <p class="mission-desc">
     Aquí va la breve descripción de la misión. Explica en una frase el objetivo principal.
+    
+    <br><br><a href="../main/magia/Mmainquest1" class="more-details m">Mas detalles</a>
   </p>
 </div>
       

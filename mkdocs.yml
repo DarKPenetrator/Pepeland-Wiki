@@ -34,6 +34,7 @@ theme:
 
 nav:
   - Inicio: index.md
+  - Misiones: missions/MainMisiones.md
   - Facciones:
       - Introducción: Facciones/Main_Facciones.md
       - Magia: Facciones/Magia/Facciones_1.md

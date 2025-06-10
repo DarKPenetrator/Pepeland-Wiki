@@ -28,7 +28,7 @@
   </div>
   <p class="mission-desc">
     Aquí va la breve descripción de la misión. Explica en una frase el objetivo principal.
-    <br><br><a href="../main/mainquest1" class="more-details">Mas detalles</a>
+    <br><br><a href="../main/coalicion/Cmainquest1" class="more-details">Mas detalles</a>
   </p>
 </div>
       
