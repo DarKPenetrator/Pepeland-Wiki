@@ -51,14 +51,15 @@ nav:
           - 4. La Guerra de los Fragmentos: Lore/2. Era Arcana/4. La Guerra de los Fragmentos.md
       - 3. Era Industrial:
           - Era Industrial: Lore/3. Era Industrial/ERA INDUSTRIAL.md
-    
+          - 1. La Revolución: Lore/3. Era Industrial/La revolucion.md
+          - 2. El Pacto Fragmentado: Lore/3. Era Industrial/pacto.md
+          - Pepeland 2: Lore/Pepeland_2.md
+
       - Pepeland 1: Lore/Pepeland_1.md
       - Pepeland 2: Lore/Pepeland_2.md
   - Eventos:
       - Vista General: Lore/Eventos/Eventos_Eras.md
       - Batallas: Lore/Eventos/Eventos_Batallas.md
-  - Personajes Históricos:
-      - Introducción: Personajes Historicos/Main Personajes.md
 
 
 markdown_extensions:

@@ -1,0 +1,21 @@
+<!-- La Llegada del Heraldo Celeste -->
+<section id="llegada-heraldo-celeste">
+  <h2 style="border-left: 4px solid #ff5722; padding-left: 0.5em; color: #bf360c;">☄️ <strong>Que sucede en Pepeland II</strong></h2>
+  <img src="../../../other/images/heraldo1.png" alt="La Llegada del Heraldo Celeste" width="1000" style="display: block; margin: 0 auto;">
+  <blockquote style="margin: 1em 0; padding: 0.75em 1em; background: #3e2723; border-left: 4px solid #ff5722; font-style: italic;">
+    Un heraldo del cosmos anuncia un destino incierto.
+  </blockquote>
+  <div style="margin-left: 1.5em; line-height: 1.6;">
+    <p>Durante varias semanas, los <strong>investigadores</strong> del pueblo conjunto de <strong>Novaenor</strong> trabajaron sin descanso, observando atentamente el <strong>firmamento</strong> y realizando <strong>cálculos</strong> minuciosos en busca de respuestas claras. Las primeras señales habían surgido de casualidad, detectadas por un joven aprendiz que exploraba el cielo nocturno mediante lentes de cristal arcano, en un ejercicio rutinario. Lo que inicialmente parecía una anomalía menor, pronto reveló ser algo de gran importancia: un <strong>cuerpo celeste desconocido</strong> se dirigía directamente hacia el planeta, y su trayectoria sugería un impacto cercano a Novaenor.</p>
+
+    <p>Rápidamente, las observaciones se intensificaron. Se organizaron turnos continuos en el observatorio principal del pueblo, analizando datos astronómicos, <strong>cálculos orbitales</strong> y <strong>predicciones de impacto</strong>. No tardaron en descubrir algo aún más fascinante y alarmante: el objeto celeste parecía contener en su núcleo algún tipo de <strong>energía cristalina</strong>, notablemente similar —aunque no idéntica— a los antiguos <strong>Cristales arcanos</strong>, cuya existencia se creía completamente extinguida tras la Segunda Ruptura.</p>
+
+    <p>La noticia generó una agitación sin precedentes en ambos bandos. Para los magos, era la esperanza de recuperar un fragmento real de la magia perdida, un vínculo directo con el pasado glorioso de la <strong>Era Arcana</strong>. Para la <strong>Coalición Tecnológica</strong>, en cambio, representaba una fuente desconocida de poder, pero también un peligro potencial que debía ser controlado cuanto antes. En cuestión de días, los ojos del continente entero se centraron en Novaenor.</p>
+
+    <p>Mientras en los laboratorios y observatorios los investigadores de ambos bandos se apresuraban a recopilar datos, examinar registros antiguos y tratar de anticipar los efectos de la llegada del meteorito, la tensión política y militar aumentaba rápidamente. La Coalición Tecnológica comenzó a movilizar <strong>tropas de élite</strong> y maquinaria de contención tecnológica hacia la frontera del territorio neutral. Al mismo tiempo, las ciudades mágicas independientes reaccionaron de manera similar, desplegando unidades de <strong>magos expertos</strong> y <strong>guardianes de esencia</strong> en puntos estratégicos cercanos.</p>
+
+    <p>La presencia de estas fuerzas armadas en la frontera creó una atmósfera peligrosa, cargada de sospecha y ansiedad. La amenaza de un conflicto inminente comenzó a pesar nuevamente sobre el continente, reavivando heridas recientes y temores antiguos. A pesar de esto, gracias a la diplomacia y los insistentes esfuerzos de los investigadores de Novaenor —que actuaron como intermediarios neutrales y defensores del conocimiento por encima de las ambiciones políticas— se logró un <strong>acuerdo frágil</strong>, pero valioso: ambas fuerzas mantendrían sus posiciones sin retroceder, pero se abstendrían de cualquier acción ofensiva o intento de apropiarse del meteorito por la fuerza.</p>
+
+    <p>Ahora, con esta incómoda <strong>tregua</strong> aún vigente y una tensión palpable en el aire, solo faltan unos días para que este <strong>cuerpo celeste misterioso</strong> llegue finalmente a la superficie del mundo. Nadie sabe con certeza qué ocurra tras su <strong>impacto</strong>. Lo único seguro es que su llegada cambiará nuevamente el curso de la <strong>historia</strong>, marcando el comienzo de una era llena de incertidumbre, riesgos y oportunidades inimaginables.</p>
+  </div>
+</section>

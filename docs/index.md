@@ -3,7 +3,7 @@
 > Aquí se narra el paso del tiempo, el ascenso de los magos, la caída de los cristales... y el renacer de una guerra mágica que lo cambiará todo.
 
 <p align="center">
-  <img src="other/images/portada.png" alt="Pepeland Portada" width="1200">
+  <img src="other/images/portada4.png" alt="Pepeland Portada" width="1200">
 </p>
 
 
